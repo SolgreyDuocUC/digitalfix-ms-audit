@@ -4,16 +4,57 @@ target/
 !**/src/main/**/target/
 !**/src/test/**/target/
 
-### IDE ###
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
 .idea
 *.iws
 *.iml
 *.ipr
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### VS Code ###
 .vscode/
 
-### Secretos ###
+### Environment & Local Config ###
 .env
-*.env
+.env.*
 !.env.example
-/wallet/
-**/wallet/
+application-local.properties
+application-local.yml
+application-local.yaml
+wallet/
+*.p12
+*.jks
+*.key
+*.pem
+
+### Logs & JVM ###
+*.log
+logs/
+hs_err_pid*
+replay_pid*
+
+### OS ###
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+### Docker ###
+docker-compose.override.yml
